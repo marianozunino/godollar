@@ -1,0 +1,15 @@
+
+output   = "internal/model"
+pkgname  = "model"
+wipe     = true
+
+# no-tests = true
+add-enum-types = true
+
+[sqlite3]
+	dbname = "./db.sqlite3"
+  blacklist = ["migrations", "other"]
+
+[auto-columns]
+  created = "created_at"
+  updated = "updated_at"
